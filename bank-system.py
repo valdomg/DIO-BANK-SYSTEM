@@ -12,7 +12,7 @@ while begin_operations:
         print('Saldo negativo, informe novamente o valor!')
 
     else:
-        operacoes_lista.append(f'Saldo inicial de R${saldo} em conta')
+        operacoes_lista.append(f'Saldo inicial de R${saldo:.2f} em conta')
         opc = None
         while opc != 4:
 
@@ -27,11 +27,11 @@ while begin_operations:
             print()
             
             if opc == 1:
-                #parei
+                
                 continuar_saque = True
 
                 if quantidade_saques == 3:
-                    print('Máximo de saques diáiros realizados. \n')     
+                    print('Máximo de saques diários realizados. \n')     
 
                 else:
                     while (continuar_saque == True) and (quantidade_saques <= 2):
